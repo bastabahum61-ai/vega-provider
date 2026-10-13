@@ -1,0 +1,14 @@
+export default {
+  name: "My Provider",
+  async initialize() {
+    console.log('Initialized');
+  },
+  async getChannels() {
+    return [
+      {
+        name: 'My Channel',
+        icon: 'https://example.com/icon.png'
+      }
+    ];
+  }
+};
